@@ -20,8 +20,8 @@ return <div>
                     </li>
                 </ul>
                 <form className="d-flex">
-                <Link className="btn btn-dark mx-2" to={/login}  role="button">Login</Link>
-                <Link className="btn btn-dark mx-2" to={/signup} role="button">Sign Up</Link>
+                <Link class="btn btn-dark mx-1" to="/login"  role="button">Login</Link>
+                <Link class="btn btn-dark mx-1" to="/signup" role="button">Sign Up</Link>
                 </form>
             </div>
         </div>
