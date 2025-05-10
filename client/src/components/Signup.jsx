@@ -6,11 +6,13 @@ const Signup = (props) => {
     const [credentials, setCredentials] = useState({name:"", email:"", pssword:"",cpssword:""});
     let history = useHistory();
 
+     const host = "http://192.168.0.110:5000"
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const{name ,email,password}=credentials;
         console.log(name,email,password);
-        const response = await fetch("http://localhost:5000/api/auth/createuser", {
+        const response = await fetch(`${host}/api/auth/createuser`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
